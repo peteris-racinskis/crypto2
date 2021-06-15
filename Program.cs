@@ -24,7 +24,7 @@ namespace crypto2
                 var pemCodedKey = PemEncoding.Write("RSA PRIVATE KEY",key);
                 File.WriteAllText("coded.pem",new string(pemCoded));
                 File.WriteAllText("private_key.pem",new string(pemCodedKey));
-                var cert_from_file = X509Certificate2.CreateFromPemFile("coded.pem", "private_key.pem");
+                var cert_from_file = X509Certificate2.CreateFromPemFile("coded.pem", "private_key");
                 var cert_from_chararr = X509Certificate2.CreateFromPem(pemCoded,pemCodedKey);
             };
         }
