@@ -1,5 +1,7 @@
 bin/
 obj/
+old/
+outputs/
 *.pem
 *.txt
 *.py
