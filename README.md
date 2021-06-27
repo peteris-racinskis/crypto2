@@ -1,5 +1,9 @@
 ## crypto2 - cryptography homework. Simple wrapper for the .NET x509 certificate and RSA interface
 
+### Requirements
+
+A linux x64 system. The .NET core 5.0 runtime is packaged with the release.
+
 ### How to use
 
 Download the release, decompress, navigate to root directory. Launch script available both here and in the release archive (already in the correct build directory) for straightforward evaluation purposes and example commands. 
