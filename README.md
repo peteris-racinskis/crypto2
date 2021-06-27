@@ -2,7 +2,7 @@
 
 ### How to use
 
-Download the release, decompress, navigate to root directory. Launch script available for straightforward evaluation purposes and example commands. 
+Download the release, decompress, navigate to root directory. Launch script available both here and in the release archive (already in the correct build directory) for straightforward evaluation purposes and example commands. 
 
 **The script allows one to quickly go through an example use case for all commands.**
 ```
