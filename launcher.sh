@@ -9,8 +9,8 @@
 #  ^-- inspect results in outputs/
 # ./launcher.sh decrypt
 #  ^-- inspect results in outputs/
-echo $0
-case $0 in
+echo $1
+case $1 in
     "generate")
         outfile="--outfile outputs/test-exist"
         test_command="generate"
@@ -25,12 +25,12 @@ case $0 in
         args="outputs/garbled.pem"
         ;;
     "encrypt")
-        outfile="outputs/encrypted.bin"
+        outfile="--outfile outputs/encrypted.bin"
         test_command="encrypt"
         args="outputs/original.txt outputs/test-exist-cert.pem"
         ;;
     "decrypt")
-        outfile="outputs/decrypted.txt"
+        outfile="--outfile outputs/decrypted.txt"
         test_command="decrypt"
         args="outputs/encrypted.bin outputs/test-exist-private-key.pem"
         ;;
