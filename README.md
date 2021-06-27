@@ -6,7 +6,7 @@ A linux x64 system. The .NET core 5.0 runtime is packaged with the release.
 
 ### How to use
 
-Download the [binary distributions available here](https://github.com/peteris-racinskis/crypto2/releases/tag/v1.1), decompress, navigate to root directory. Launch script available both here and in the release archive (already in the correct build directory) for straightforward evaluation purposes and example commands. 
+Download the [binary distributions available here](https://github.com/peteris-racinskis/crypto2/releases/tag/v1.1), decompress, navigate to root directory, ensure exec permissions for **crypto2** and **launcher.sh**, make sure **launcher.sh** has a system-compatible shebang. Launch script available both here and in the release archive (already in the correct build directory) for straightforward evaluation purposes and example commands. 
 
 **The script allows one to quickly go through an example use case for all commands.**
 ```
