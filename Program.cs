@@ -14,28 +14,6 @@ namespace crypto2
     {
         static void Main(string[] args)
         {   
-            /*
-            var dir = "outputs/";
-            var keyPath = dir+"private.pem";
-            var certPath = dir+"cert.pem";
-            var plaintext = dir+"original.txt";
-            var cyphertext = dir+"encrypted.bin";
-            var resultPath = dir+"decrypted.txt";
-            X509Certificate2 cert;
-            using (RSA rsa = RSA.Create(2048))
-            { 
-                cert = CertificateWrapper.CreateCertificate("foobar",rsa);
-                CertificateWrapper.WriteCertificateToFile(certPath, cert);
-                CertificateWrapper.WriteKeyToFile(keyPath,rsa);
-            }
-            var msg = File.ReadAllBytes(plaintext);
-            var certFromFile = CertificateWrapper.GetCertificateFromFile(certPath);
-            var valid = CertificateWrapper.VerifyCert(cert);
-            var encrypted = CertificateWrapper.EncryptFile(certPath,plaintext);
-            File.WriteAllBytes(cyphertext,encrypted);
-            var decrypted = CertificateWrapper.DecryptFile(keyPath,cyphertext);
-            File.WriteAllBytes(resultPath,decrypted);
-            */
             // Set up the commands and global flags
             var rootCommand = new RootCommand{
                 new Option<string>(
