@@ -63,7 +63,7 @@ Options:
   -?, -h, --help         Show help and usage information
 ```
 
-**Validate**: verify that the issuer and subject are the same, and the signature matches the contents of the certificate.
+**Validate**: verify that the issuer and subject are the same, and the signature matches the contents of the certificate (actually just set the certificate as the root of a trust chain and verify it against itself using the built-in X509Chain API, but it operates the same way).
 
 ```
 validate
